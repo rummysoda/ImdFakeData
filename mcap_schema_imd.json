@@ -1,0 +1,64 @@
+{
+  "imd_voltage_schema": {
+    "name": "imd.Voltage",
+    "encoding": "jsonschema",
+    "schema": {
+      "type": "object",
+      "title": "IMD Voltage",
+      "description": "Insulation Monitoring Device voltage measurements",
+      "properties": {
+        "MHS_voltage_V": {
+          "type": "number",
+          "description": "Main High-Side voltage",
+          "minimum": 0,
+          "maximum": 5,
+          "unit": "V"
+        },
+        "OKHS_voltage_V": {
+          "type": "number",
+          "description": "OK High-Side voltage",
+          "minimum": 0,
+          "maximum": 5,
+          "unit": "V"
+        }
+      },
+      "required": ["MHS_voltage_V", "OKHS_voltage_V"]
+    },
+    "topic": "/vehicle/imd/voltage",
+    "update_rate_hz": 1000
+  },
+  "example_messages": {
+    "sample_1": {
+      "topic": "/vehicle/imd/voltage",
+      "timestamp": 1731199316326000000,
+      "data": {
+        "MHS_voltage_V": 5.0,
+        "OKHS_voltage_V": 5.0
+      }
+    },
+    "sample_2": {
+      "topic": "/vehicle/imd/voltage",
+      "timestamp": 1731199316327000000,
+      "data": {
+        "MHS_voltage_V": 0.0,
+        "OKHS_voltage_V": 5.0
+      }
+    },
+    "sample_3": {
+      "topic": "/vehicle/imd/voltage",
+      "timestamp": 1731199316328000000,
+      "data": {
+        "MHS_voltage_V": 5.0,
+        "OKHS_voltage_V": 0.0
+      }
+    },
+    "sample_4": {
+      "topic": "/vehicle/imd/voltage",
+      "timestamp": 1731199316329000000,
+      "data": {
+        "MHS_voltage_V": 0.0,
+        "OKHS_voltage_V": 0.0
+      }
+    }
+  }
+}
