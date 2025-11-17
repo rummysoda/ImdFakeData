@@ -45,7 +45,7 @@ def simulate_segment(f, duty, okhs, duration_s, t_start):
     # build sample records for this segment
     segment_rows = [
         {
-            "timestamp": ts.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3],
+            "timestamp": int(ts.timestamp() * 1000),  # ms since epoch
             "MHS_voltage_V": round(v, 3),
             "OKHS_voltage_V": okhs,
         }

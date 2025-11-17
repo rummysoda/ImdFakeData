@@ -30,7 +30,7 @@
   "example_messages": {
     "sample_1": {
       "topic": "/vehicle/imd/voltage",
-      "timestamp": 1731199316326000000,
+      "timestamp": 173119931632,
       "data": {
         "MHS_voltage_V": 5.0,
         "OKHS_voltage_V": 5.0
@@ -38,7 +38,7 @@
     },
     "sample_2": {
       "topic": "/vehicle/imd/voltage",
-      "timestamp": 1731199316327000000,
+      "timestamp": 1731199316327,
       "data": {
         "MHS_voltage_V": 0.0,
         "OKHS_voltage_V": 5.0
@@ -46,7 +46,7 @@
     },
     "sample_3": {
       "topic": "/vehicle/imd/voltage",
-      "timestamp": 1731199316328000000,
+      "timestamp": 1731199316328,
       "data": {
         "MHS_voltage_V": 5.0,
         "OKHS_voltage_V": 0.0
@@ -54,7 +54,7 @@
     },
     "sample_4": {
       "topic": "/vehicle/imd/voltage",
-      "timestamp": 1731199316329000000,
+      "timestamp": 1731199316329,
       "data": {
         "MHS_voltage_V": 0.0,
         "OKHS_voltage_V": 0.0
